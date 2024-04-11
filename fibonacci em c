@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main(void) 
+{
+    int x = 1, fibonacci = 1, aux = 0;    
+    
+    while(fibonacci <50)
+    { 
+        printf("%d-", fibonacci);                   
+        fibonacci = fibonacci + aux;                 
+        aux = x;
+        x = fibonacci;        
+    }
+  return 0;
+}
